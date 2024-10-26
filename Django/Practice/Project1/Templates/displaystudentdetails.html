@@ -1,0 +1,22 @@
+<html>
+<title> StudentDetails </title>
+<body>
+	<h1><center>StudentDetails</center></h1>
+	<form action = "StudentDetails">
+		<br><center>Enter name : <input type = "text" name = "name"></center></br>
+		<br><center>Enter roll : <input type = "text" name = "roll"></center></br>
+		<br><center>Enter m1 : <input type = "text" name = "m1"></center></br>
+		<br><center>Enter m2 : <input type = "text" name = "m2"></center></br>
+		<br><center><input type = "submit"></center></br>
+	{% if flag ==1%}
+		Name : {{name}}
+		Roll : {{roll}}
+		M1 : {{m1}}
+		M2 : {{m2}}
+		Average : {{average}}
+	{% elif flag ==2%}
+		Message:{{msg}}
+	{%endif%}
+	</form>
+</body>
+</html>

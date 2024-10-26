@@ -1,0 +1,24 @@
+<html>
+<h1>
+<h1><center> Student Info <center><h1>
+<form action = "StudnetDetails">
+	<br><center>Enter the Student regno:<input type = "text" name = "regno"></center></br>
+	<br><center>Enter the Student name:<input type = "text" name = "name"></center></br>
+	<br><center>Enter the Student mark1:<input type = "text" name = "m1"></center></br>
+	<br><center>Enter the Student mark2:<input type = "text" name = "m2"></center></br>
+
+<h1>
+<center>
+{% if flag == 1 %}
+<br>Student Details</br>
+<br>regno:{{robj}}</br>
+<br>name:{{nobj}}</br>
+<br>avg:{{aobj}}</br>
+
+{%elif flag == 2%}
+	<br> Message:{{Msg}}</br>
+{%endif%}
+</center>
+</h1>
+</form>
+</html>
